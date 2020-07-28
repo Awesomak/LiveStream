@@ -163,7 +163,7 @@ io.on("error", function (e) {
 const port = process.env.PORT || 3001;
 
 server.listen(port, function () {
-  console.log("https and websocket listening on port:3001");
+  console.log(`https and websocket listening on port:${port}`);
 });
 
 process.on("uncaughtException", function (err) {
