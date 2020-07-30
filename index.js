@@ -160,7 +160,7 @@ io.on("error", function (e) {
   console.log("socket.io error:" + e);
 });
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8080;
 
 server.listen(port, function () {
   console.log(`https and websocket listening on port:${port}`);
