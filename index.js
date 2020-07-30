@@ -1,6 +1,6 @@
 const server = require("http").createServer();
 
-const io = require("socket.io").listen(server, { transports: ["websocket"] });
+const io = require("socket.io").listen(server, { transports: ["polling"] });
 
 var spawn = require("child_process").spawn;
 
