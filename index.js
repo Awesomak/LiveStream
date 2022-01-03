@@ -31,6 +31,11 @@ io.on("connection", function (socket) {
       socket.to(roomId).emit(`send_message`, m);
     }
   });
+  
+  socket.on("switch_products", function (m) {
+      socket.emit(`switch_products`, m);
+      socket.to(roomId).emit(`switch_products`, m);
+  });
 
   socket.on("update__viewers", function (m) {
     if (roomId) {
